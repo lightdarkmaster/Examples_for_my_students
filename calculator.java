@@ -4,6 +4,7 @@ import java.util.Scanner;
 class calculator{
 
     public static int num1, num2, sum, difference, product, quotient;
+    public static String choice;
 
     public static void main(String[] args) {
         System.out.println("Calculator: ");
@@ -21,23 +22,26 @@ class calculator{
             System.out.println("2 - subtraction");
             System.out.println("3 - multiplication");
             System.out.println("4 - division");
+            System.out.println("5 - exit");
 
-            //ask user choice..
-            System.out.println("Enter Number Choice: ");
-            String choice = input.next();
-
-            if(choice.equalsIgnoreCase("1")){
-                addNumbers();
-            }else if(choice.equalsIgnoreCase("2")){
-                subtractNumbers();
-            }else if(choice.equalsIgnoreCase("3")){
-                multiplyNumbers();
-            }else if(choice.equalsIgnoreCase("4")){
-                divideNumbers();
-            }else{
-                System.out.println("Invalid Choice");
-            }
-
+            do{
+                System.out.println("Enter Number Choice: ");
+                choice = input.next();
+    
+                if(choice.equalsIgnoreCase("1")){
+                    addNumbers();
+                }else if(choice.equalsIgnoreCase("2")){
+                    subtractNumbers();
+                }else if(choice.equalsIgnoreCase("3")){
+                    multiplyNumbers();
+                }else if(choice.equalsIgnoreCase("4")){
+                    divideNumbers();
+                }else if(choice.equalsIgnoreCase("5")){
+                    System.out.println("Goodbye");
+                }else{
+                    System.out.println("Invalid Choice");
+                }
+            }while(choice.equalsIgnoreCase("5"));
         }
     }
 
