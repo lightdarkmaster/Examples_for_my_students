@@ -29,6 +29,7 @@ print("1 - for addition");
 print("2 - for subtraction");
 print("3 - for multiplication");
 print("4 - for division");
+print("5 - Exit");
 
 choice = input("Enter Choice: ");
 if(choice == "1"):
@@ -39,6 +40,9 @@ elif(choice == "3"):
     multiplyNumbers();
 elif(choice == "4"):
     divideNumbers();
+elif(choice == "5"):
+    exit();
 else:
     print("Invalid Choice");
-
+while(choice != "5"):
+    exit();
