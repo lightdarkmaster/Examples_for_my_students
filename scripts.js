@@ -22,10 +22,12 @@ const test2 = (array) =>{
 console.log(test2([1,2,3,4,5,6]));
 
 
-const ktest =(i)=>{
-
-    const kres = i.length/i+i;
-    return kres;
+const ktest =(value)=>{
+    let result = 0;
+    for (let i = 0; i < value; i++) {
+        result += value;
+    }
+    return result;
 }
 
-console.log(ktest(12));
+console.log(ktest(4));
