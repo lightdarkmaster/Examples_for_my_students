@@ -9,9 +9,6 @@ const test1 = (array,length) =>{
 console.log(test1(["Apple","Banana","Peaches","Mangoes","Absdedede","Apt"],6));
 
 
-
-
-
 console.log("Test II: Implement a function that squares each number in an array, returning a new array with the squared values.");
 const test2 = (array) =>{
     return array.map(function(x){
@@ -22,34 +19,17 @@ const test2 = (array) =>{
 console.log(test2([1,2,3,4,5,6]));
 
 
-const ktest =(value)=>{
-    let result = [];
-    return array.map(function(x){
-        for(let i = 0; i < value; i++){
-            result += value;
+const ktest = (array) => {
+    return array.map(function(x) {
+        let result = 0;
+        for (let i = 0; i < x; i++) {
+            result += x;
         }
-        return result
-    })
-
-    //for (let i = 0; i < value; i++) {
-        //result += value;
-    //}
-    //return result;
+        return result;
+    });
 }
 
-//console.log(ktest(4));
-
-
-
-const f =(array,length)=>{
-
-    let s = [];
-    for(let i; i < array; i++){
-        
-    }
-}
-
-//
+console.log(ktest([1, 4, 6, 8, 9, 9]));
 
 
 const solved =()=>{
@@ -65,9 +45,11 @@ const solved =()=>{
     const o2 = o1 + num2;
     const o3 = o2 * given2;
     const o4 = o3 - num3;
+
+    const r = o4 
     
     return o4;
 
 
 }
-console.log(solved())
+//console.log(solved())
