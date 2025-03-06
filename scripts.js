@@ -53,3 +53,4 @@ const solved =()=>{
 
 }
 //console.log(solved())
+//Guess game
