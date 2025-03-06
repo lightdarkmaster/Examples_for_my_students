@@ -20,13 +20,13 @@ console.log(test2([1,2,3,4,5,6]));
 
 
 const ktest = (array) => {
-    return array.map(function(x) {
-        let result = 0;
-        for (let i = 0; i < x; i++) {
-            result += x;
+    return array.map(function(x){
+        let res = 0;
+        for(let i=0; i < x; i++){
+            res += x;
         }
-        return result;
-    });
+        return res;
+    })
 }
 
 console.log(ktest([1, 4, 6, 8, 9, 9]));
