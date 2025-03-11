@@ -52,5 +52,16 @@ const solved =()=>{
 
 
 }
+
+const solveFunction=(value)=>{
+
+    var x = 1;
+    var squared = 1;
+    var result = "";
+
+    for(let i=0; i < value; i++){
+        console.log(i);
+    }
+}
 //console.log(solved())
 //Guess game
